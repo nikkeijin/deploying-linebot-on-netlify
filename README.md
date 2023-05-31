@@ -1,4 +1,11 @@
+# Deploying LINE BOT on Netlify
+     
+Create your own repository in your github account with all these example files and after setting the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API you can deploy from GitHub to Netlify. You can see below an explanation of how to do so if you have any doubts about.
+
 # Dependencies
+        
+These are the dependencies we used.
+
 ```
 express
 @line/bot-sdk
@@ -8,7 +15,8 @@ dotenv
 ```
 
 # CHANNEL SECRET & CHANNEL ACCESS TOKEN
-Set your .env with the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API.
+        
+Set your .env with the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API.      
 
 ```
 CHANNEL_SECRET=xxxxxxxxxxx
@@ -16,9 +24,11 @@ CHANNEL_ACCESS_TOKEN=xxxxxxxxxxx
 ```
 
 # Webhook URL
+        
+Set your Webhook URL for the LINE Messaging API using the example below     
 
 ```
-https://<id>.netlify.com/.netlify/functions/server/webhook
+https://<your-id>.netlify.com/.netlify/functions/server/webhook
 ```   
 
 # How to enable LINE Messaging API
@@ -28,7 +38,7 @@ https://<id>.netlify.com/.netlify/functions/server/webhook
 3. Fill in the Channel Information: Provide the necessary information about your channel, including the channel name, description, and category.
 4. Configure Messaging API Settings: In the Channel settings, go to the "Messaging API" tab and configure the necessary settings for your bot. You can set the basic settings such as default language, time zone, and other options.
 5. Generate Channel Access Token: In the "Messaging API" tab, scroll down to the "Channel access token" section and click on the "Issue" button to generate a new channel access token. This token will be used to authenticate your bot when making API requests.   
-
+        
 # Setting Webhook URL for the LINE Messaging API
        
 1. Go to the LINE Developers Console at https://developers.line.biz/.       
@@ -42,14 +52,14 @@ This URL should be able to receive HTTP POST requests.
 8. Click on the "Verify" button to verify that the provided URL is valid and can receive webhook events. LINE will send a verification request to the specified URL.        
 9. Ensure that your server is ready to handle webhook events and respond to the verification request correctly. The verification request includes a verification code that your server needs to respond with to complete the verification process.      
 10. Once the verification is successful, click on the "Save" button to save the webhook settings.       
-
+        
 Note: Scroll down and remember to DISABLE these settings since we are going to use our bot:       
 1. Allow bot to join group chats        
 2. Auto-reply messages      
 3. Greeting messages        
-
+        
 # How to deploy a website from GitHub on Netlify
-
+        
 1. Sign up for an account on Netlify (if you haven't already) at https://app.netlify.com/signup.        
 2. Once logged in to Netlify, click on the "New site from Git" button on the dashboard.     
 3. Select the "GitHub" option to connect your GitHub account to Netlify.        
@@ -58,6 +68,6 @@ Note: Scroll down and remember to DISABLE these settings since we are going to u
 6. Specify the branch you want to deploy. The default branch is usually set to "main" or "master," but you can choose a different branch if needed.     
 7. Configure the build settings. Netlify will automatically detect common build settings for popular frameworks, but you can customize them if necessary.       
 8. Click on the "Deploy site" button to start the deployment process. Netlify will fetch your code from GitHub and build your website.      
-9. Once the build is complete, Netlify will provide you with a unique URL for your deployed website. You can customize this URL in the site settings if desired.        
+9. Once the build is complete, Netlify will provide you with a unique URL for your deployed website. You can customize this URL in the site settings if desired.   
 10. You can also set up custom domains, SSL certificates, and other advanced settings in the site settings on Netlify.      
 11. Netlify will automatically deploy updates whenever you push changes to the connected GitHub repository. You can monitor the deployment status and view deployment logs on the Netlify dashboard.        
