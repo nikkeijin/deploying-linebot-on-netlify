@@ -21,7 +21,16 @@ CHANNEL_ACCESS_TOKEN=xxxxxxxxxxx
 https://<id>.netlify.com/.netlify/functions/server/webhook
 ```   
 
-To set a webhook URL for your LINE Messaging API, follow these steps:       
+# How to enable LINE Messaging API
+    
+1. Create a LINE Developers Account: Go to the LINE Developers website (https://developers.line.biz) and create an account if you don't have one already.
+2. Create a Channel: Once you have logged in to your LINE Developers account, create a new channel for your Messaging API. Click on the "Create new channel" button and select the Messaging API option.
+3. Fill in the Channel Information: Provide the necessary information about your channel, including the channel name, description, and category.
+4. Configure Messaging API Settings: In the Channel settings, go to the "Messaging API" tab and configure the necessary settings for your bot. You can set the basic settings such as default language, time zone, and other options.
+5. Generate Channel Access Token: In the "Messaging API" tab, scroll down to the "Channel access token" section and click on the "Issue" button to generate a new channel access token. This token will be used to authenticate your bot when making API requests.   
+
+# Setting Webhook URL for the LINE Messaging API
+       
 1. Go to the LINE Developers Console at https://developers.line.biz/.       
 2. Log in with your LINE account.       
 3. Select the provider and the channel that you want to set the webhook URL for.        
