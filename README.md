@@ -34,7 +34,7 @@ This URL should be able to receive HTTP POST requests.
 9. Ensure that your server is ready to handle webhook events and respond to the verification request correctly. The verification request includes a verification code that your server needs to respond with to complete the verification process.      
 10. Once the verification is successful, click on the "Save" button to save the webhook settings.       
 
-Note: Scroll down and remember to disable these settings since we are going to use our bot:       
+Note: Scroll down and remember to DISABLE these settings since we are going to use our bot:       
 1. Allow bot to join group chats        
 2. Auto-reply messages      
 3. Greeting messages        
