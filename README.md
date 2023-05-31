@@ -7,7 +7,8 @@ netlify-lambda
 dotenv
 ```
 
-# Set your .env with the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API
+# CHANNEL SECRET & CHANNEL ACCESS TOKEN
+Set your .env with the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API.
 
 ```
 CHANNEL_SECRET=xxxxxxxxxxx
