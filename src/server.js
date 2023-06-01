@@ -1,11 +1,10 @@
 'use strict'
 
-import dotenv from 'dotenv';
-dotenv.config();
-
-import express from 'express';
-import line from '@line/bot-sdk';
-import serverless from 'serverless-http';
+require('dotenv').config();
+const express = require('express');
+const line = require('@line/bot-sdk');
+const serverless = require('serverless-http');
+const app = express();
 
 /* ########## 
 
