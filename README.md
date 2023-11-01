@@ -2,7 +2,7 @@
      
 Create your own repository in your github account with all these example files and after setting the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API you can deploy from GitHub to Netlify. You can see below an explanation of how to do so if you have any doubts about.
 
-# Dependencies
+## Dependencies
         
 These are the dependencies we used.
 
@@ -14,7 +14,7 @@ netlify-lambda
 dotenv
 ```
 
-# CHANNEL SECRET & CHANNEL ACCESS TOKEN
+## CHANNEL SECRET & CHANNEL ACCESS TOKEN
         
 Set your .env with the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API.      
 
@@ -23,7 +23,7 @@ CHANNEL_SECRET=xxxxxxxxxxx
 CHANNEL_ACCESS_TOKEN=xxxxxxxxxxx
 ```
 
-# Webhook URL
+## Webhook URL
         
 Set your Webhook URL for the LINE Messaging API using the example below     
 
@@ -31,7 +31,7 @@ Set your Webhook URL for the LINE Messaging API using the example below
 https://<your-id>.netlify.com/.netlify/functions/server/webhook
 ```   
           
-# How to deploy a website from GitHub on Netlify
+## How to deploy a website from GitHub on Netlify
         
 1. Sign up for an account on Netlify (if you haven't already) at https://app.netlify.com/signup.        
 2. Once logged in to Netlify, click on the "New site from Git" button on the dashboard.     
@@ -45,7 +45,7 @@ https://<your-id>.netlify.com/.netlify/functions/server/webhook
 10. You can also set up custom domains, SSL certificates, and other advanced settings in the site settings on Netlify.      
 11. Netlify will automatically deploy updates whenever you push changes to the connected GitHub repository. You can monitor the deployment status and view deployment logs on the Netlify dashboard.   
           
-# How to enable LINE Messaging API
+## How to enable LINE Messaging API
     
 1. Create a LINE Developers Account: Go to the LINE Developers website (https://developers.line.biz) and create an account if you don't have one already.
 2. Create a Channel: Once you have logged in to your LINE Developers account, create a new channel for your Messaging API. Click on the "Create new channel" button and select the Messaging API option.
@@ -53,7 +53,7 @@ https://<your-id>.netlify.com/.netlify/functions/server/webhook
 4. Configure Messaging API Settings: In the Channel settings, go to the "Messaging API" tab and configure the necessary settings for your bot. You can set the basic settings such as default language, time zone, and other options.
 5. Generate Channel Access Token: In the "Messaging API" tab, scroll down to the "Channel access token" section and click on the "Issue" button to generate a new channel access token. This token will be used to authenticate your bot when making API requests.   
         
-# How to set Webhook URL for the LINE Messaging API
+## How to set Webhook URL for the LINE Messaging API
        
 1. Go to the LINE Developers Console at https://developers.line.biz/.       
 2. Log in with your LINE account.       
