@@ -1,4 +1,4 @@
-# Deploying LINE BOT on Netlify
+## Deploying LINE BOT on Netlify
      
 Create your own repository in your github account with all these example files and after setting the CHANNEL SECRET & CHANNEL ACCESS TOKEN from your LINE Messaging API you can deploy from GitHub to Netlify. You can see below an explanation of how to do so if you have any doubts about.
 
